@@ -86,7 +86,7 @@ input[type=checkbox]{
     background-image: linear-gradient(rgb(234, 241, 243), 90%, rgb(255, 165, 61)); 
   }
 
-  .secao-de-datas {
+  .imagem-secao-de-datas {
     padding: 20px;
     width: 100%;
     object-fit: flex;
@@ -209,7 +209,7 @@ input[type=checkbox]{
 
 @media (min-width: 1280px) {
 
-  .secao-de-datas {
+  .imagem-secao-de-datas {
     padding: 20px;
     margin-left: 45%;
     display: block;
