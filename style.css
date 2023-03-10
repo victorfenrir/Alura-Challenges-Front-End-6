@@ -1,9 +1,9 @@
- /*NAVBAR, LOGO E MENU*/
-
 body {
-  min-height: 100vh;
-  background-image: linear-gradient(rgb(234, 241, 243), 90%, rgb(255, 165, 61)); 
+  width: 100%;
+  background-image: linear-gradient(rgb(234, 241, 243), 88%, #ffa43b); 
 }
+
+/*NAVBAR, LOGO E MENU*/
 
 .navbar {
   width: 100%;
@@ -58,7 +58,7 @@ input[type=checkbox]{
   object-position: bottom;
 }
 
- /* APLICAÇÃO MEDIA QUERIES */
+ /* Media Querie - Mobile e Tablet */
 @media (max-width: 1279px) {
   .menu { 
   display:none;
@@ -86,21 +86,23 @@ input[type=checkbox]{
     background-image: linear-gradient(rgb(234, 241, 243), 90%, rgb(255, 165, 61)); 
   }
 
-  .imagem-secao-de-datas {
-    padding: 20px;
+  /*Home*/
+
+  .imagem-data {
+    padding: 10px;
     width: 100%;
-    object-fit: flex;
-    object-position: bottom;
+    border: none;
+    border-radius: 5px;
   }
 
-  .h1 {
+  .h1-data {
     display: block;
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
   }
 
-  .h2 {
+  .h2-data {
     display: block;
     text-align: center;
     font-size: 20px;
@@ -119,23 +121,23 @@ input[type=checkbox]{
     border: none;
     background-color: rgb(234, 241, 243);
     margin-top: 15px;
-    margin-left: 20%;
+    width: 100%;
   }
 
-  .h3 {
-    display: inline-block;
-    margin-inline: 20%;
+  .h3-sabado {
+    display: block;
     font-size: 40px;
     font-weight: bold;
     color: #303030e8;
+    text-align: center;
   }
 
-  .h4 {
-    display: inline-block;
+  .h4-sabado {
+    display: block;
     font-size: 24px;
     text-transform: uppercase;
     padding: 10px;
-    margin-left: 15%;
+    text-align: center;
     color: #fff;
     background-color: orange;
     font-weight: bold;
@@ -168,12 +170,12 @@ input[type=checkbox]{
     color: #303030e8;
   }
 
-  .h5 {
-    display: inline-block;
+  .h5-domingo {
+    display: block;
     font-size: 28px;
     text-transform: uppercase;
     padding: 10px;
-    margin-left: 6%;
+    text-align: center;
     color: #fff;
     background-color: orange;
     font-weight: bold;
@@ -205,20 +207,70 @@ input[type=checkbox]{
     font-size: 20px;
     color: #303030e8;
   }
+
+  /*A experiência*/
+
+  .imagem-experiencia {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .h1-exp {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-experiencia {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
+
+  .imagem-sustentabilidade {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .h2-sus {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-sus {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
 }
+
+/* Media Querie - Desktop*/
 
 @media (min-width: 1280px) {
 
-  .imagem-secao-de-datas {
+/* Home */
+
+  .imagem-data {
+    float: left;
     padding: 20px;
-    margin-left: 45%;
-    display: block;
+    margin-left: 15%;
     width: 480px;
-    object-fit: flex;
-    object-position: bottom;
   }
 
-  .h1 {
+  .h1-data {
     display: block;
     text-align: center;
     font-size: 20px;
@@ -226,7 +278,7 @@ input[type=checkbox]{
     margin-left: 20%;
   }
 
-  .h2 {
+  .h2-data {
     display: block;
     text-align: center;
     font-size: 20px;
@@ -246,19 +298,19 @@ input[type=checkbox]{
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
-    margin-left: 25%;
+    margin-left: 18%;
     background-color: rgb(234, 241, 243)
   }
 
-  .h3 {
-    display: inline-block;
-    margin-left: 8%;
+  .h3-sabado {
+    display: block;
     font-size: 40px;
     font-weight: bold;
     color: #303030e8;
+    text-align: center;
   }
 
-  .h4 {
+  .h4-sabado {
     display: inline-block;
     font-size: 30px;
     text-transform: uppercase;
@@ -296,7 +348,7 @@ input[type=checkbox]{
     color: #303030e8;
   }
 
-  .h5 {
+  .h5-domingo {
     display: inline-block;
     font-size: 30px;
     text-transform: uppercase;
@@ -334,6 +386,57 @@ input[type=checkbox]{
     color: #303030e8;
   }
 
+  /*A experiência*/
+
+  .imagem-experiencia {
+    float: left;
+    padding: 20px;
+    width: 480px;
+    margin-left: 15%;
+  }
+
+  .h1-exp {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-experiencia {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+  }
+
+  .imagem-sustentabilidade {
+    float: right;
+    padding: 20px;
+    width: 480px;
+    margin-right: 15%;
+  }
+
+  .h2-sus {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-sus {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+  }
+}
+
+.footer {
+  width: 100%;
 }
 
 
