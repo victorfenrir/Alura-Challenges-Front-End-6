@@ -255,6 +255,103 @@ input[type=checkbox]{
     line-height: 1.5em;
     color: #303030e8;
   }
+
+  .imagem-atracoes {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .h3-atr {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-atr {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
+
+/*Mapa de Setores*/
+
+  .imagem-palco {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150%;
+    margin-left: -15%;
+  }
+  .h1-set {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+    margin-top: -10%;
+    margin-bottom: 5%;
+  }
+
+  .imagem-setores {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .h2-set {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo1-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
+
+  .h3-set {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo2-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
+
+  .h4-set {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo3-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #303030e8;
+  }
 }
 
 /* Media Querie - Desktop*/
@@ -303,6 +400,7 @@ input[type=checkbox]{
   }
 
   .h3-sabado {
+    padding-top: 2%;
     display: block;
     font-size: 40px;
     font-weight: bold;
@@ -419,6 +517,7 @@ input[type=checkbox]{
   }
 
   .h2-sus {
+    padding-top: 1%;
     display: block;
     text-align: right;
     font-size: 20px;
@@ -432,6 +531,110 @@ input[type=checkbox]{
     font-size: 14px;
     line-height: 2em;
     color: #303030e8;
+  }
+
+  .imagem-atracoes {
+    float: left;
+    padding: 20px;
+    width: 480px;
+    margin-left: 15%;
+  }
+
+  .h3-atr {
+    padding-top: 3%;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+  }
+
+  .paragrafo-atr {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+  }
+
+/*Mapa de Setores*/
+
+  .imagem-palco {
+    float: middle;
+    padding: 20px;
+    margin-left: 17%;
+  }
+
+  .h1-set {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #303030e8;
+    border-bottom: 1%;
+  }
+
+  .imagem-setores {
+    float: middle;
+    padding: 20px;
+    margin-left: 14%;
+  }
+
+  .h2-set {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+    margin-left: 28%;
+    margin-top: -8%;
+  }
+
+  .paragrafo1-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+    margin-right: 40%;
+  }
+
+  .h3-set {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+    margin-top: -14.5%;
+    margin-right: 26.5%;
+  }
+
+  .paragrafo2-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+    margin-left: 42%;
+  }
+
+  .h4-set {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303030e8;
+    margin-top: -7%;
+  }
+
+  .paragrafo3-set {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2em;
+    color: #303030e8;
+    margin-bottom: 5%;
+    margin-left: 1%;
   }
 }
 
