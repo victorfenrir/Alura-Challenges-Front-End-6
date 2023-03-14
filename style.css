@@ -298,7 +298,7 @@ input[type=checkbox]{
     margin-bottom: 5%;
   }
 
-  .imagem-setores {
+  .imagem-pista {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -321,6 +321,13 @@ input[type=checkbox]{
     color: #303030e8;
   }
 
+  .imagem-cadeiras {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+
   .h3-set {
     display: block;
     text-align: center;
@@ -335,6 +342,13 @@ input[type=checkbox]{
     font-size: 14px;
     line-height: 1.5em;
     color: #303030e8;
+  }
+
+  .imagem-pista-premium {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
   }
 
   .h4-set {
@@ -560,34 +574,36 @@ input[type=checkbox]{
 /*Mapa de Setores*/
 
   .imagem-palco {
-    float: middle;
+    display: inline-block;
+    vertical-align: center;
     padding: 20px;
-    margin-left: 17%;
+    margin-left: 16%;
+    margin-bottom: -3%;
   }
 
   .h1-set {
     display: block;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bolder;
     color: #303030e8;
-    border-bottom: 1%;
+    margin-bottom: 2%
   }
 
-  .imagem-setores {
-    float: middle;
+  .imagem-pista {
+    float: left;
     padding: 20px;
-    margin-left: 14%;
+    margin-left: 10.5%;
   }
 
   .h2-set {
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     font-weight: bolder;
     color: #303030e8;
-    margin-left: 28%;
-    margin-top: -8%;
+    margin-top: 17.5%;
+    margin-left: -57%;
   }
 
   .paragrafo1-set {
@@ -596,17 +612,23 @@ input[type=checkbox]{
     font-size: 14px;
     line-height: 2em;
     color: #303030e8;
-    margin-right: 40%;
+    margin-left: -57%;
   }
 
+  .imagem-pista-premium {
+    float: right;
+    padding: 20px;
+    margin-top: -25%;
+    margin-right: 39%;
+  }
+  
   .h3-set {
     display: block;
-    text-align: right;
+    text-align: center;
     font-size: 20px;
     font-weight: bolder;
     color: #303030e8;
-    margin-top: -14.5%;
-    margin-right: 26.5%;
+    margin-top: -10%;
   }
 
   .paragrafo2-set {
@@ -615,7 +637,13 @@ input[type=checkbox]{
     font-size: 14px;
     line-height: 2em;
     color: #303030e8;
-    margin-left: 42%;
+  }
+
+  .imagem-cadeiras {
+    float: right;
+    padding: 20px;
+    margin-top: -36%;
+    margin-right: 12%;
   }
 
   .h4-set {
@@ -624,7 +652,8 @@ input[type=checkbox]{
     font-size: 20px;
     font-weight: bolder;
     color: #303030e8;
-    margin-top: -7%;
+    margin-top: -21%;
+    margin-left: 55%;
   }
 
   .paragrafo3-set {
@@ -633,13 +662,14 @@ input[type=checkbox]{
     font-size: 14px;
     line-height: 2em;
     color: #303030e8;
-    margin-bottom: 5%;
-    margin-left: 1%;
+    margin-left: 55%;
+    margin-bottom: 10%
   }
 }
 
 .footer {
   width: 100%;
+  position: absolute;
 }
 
 
