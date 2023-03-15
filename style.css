@@ -1,5 +1,6 @@
 body {
   width: 100%;
+  height: 100%;
   background-image: linear-gradient(rgb(234, 241, 243), 88%, #ffa43b); 
 }
 
@@ -11,7 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgb(14, 118, 167);
+  background-color: #2e7ba2;
   color: #fff;
 }
 
@@ -80,6 +81,7 @@ input[type=checkbox]{
 
   .hamburger {
   display: block;
+  margin-left: 65%;
   }
 
   body {
@@ -116,7 +118,7 @@ input[type=checkbox]{
     line-height: 2em;
   }
 
-  button {
+  .comprar-button {
     cursor: pointer;
     border: none;
     background-color: rgb(234, 241, 243);
@@ -366,6 +368,83 @@ input[type=checkbox]{
     line-height: 1.5em;
     color: #303030e8;
   }
+
+/*Informações Gerais*/
+
+  .h1-per {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #303030e8;
+    padding: 10px;
+  }
+
+  .accordion {
+    background-color: #2e7ba2;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px;
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 5%;
+  }
+
+  .panel {
+    padding: 14px;
+    background-color: #c8deef;
+    display: none;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  /*Área dos Ingressos*/
+
+  form {
+    margin: 0 auto;
+    width: 30%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  form div {
+    margin-top: 1em;
+    margin-left: 10%;
+  }
+
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+  }
+
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+
+  .form-button {
+    font-size: 16px;
+    padding: 4px 16px;
+    margin-left: 110%
+  }
+
 }
 
 /* Media Querie - Desktop*/
@@ -405,7 +484,7 @@ input[type=checkbox]{
     margin-left: 30%;
   }
   
-  button {
+  .comprar-button {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
@@ -665,11 +744,91 @@ input[type=checkbox]{
     margin-left: 55%;
     margin-bottom: 10%
   }
+
+ /*Informações Gerais*/
+ 
+  .h1-per {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #303030e8;
+    padding: 10px;
+  }
+
+  .accordion {
+    background-color: #2e7ba2;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px;
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 25%;
+  }
+
+  .accordion:hover {
+    background-color: #75e2f5;
+  }
+
+  .panel {
+    padding: 16px;
+    background-color: #c8deef;
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 25%;
+    line-height: 2em;
+    text-align: justify;
+  }
+
+/*Área dos Ingressos*/
+
+  form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  form div {
+    margin-top: 1em;
+    margin-left: 10%;
+  }
+
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+  }
+
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+
+  .form-button {
+    margin-left: 28%;
+    font-size: 16px;
+    padding: 4px 16px;
+  }
+
 }
 
 .footer {
   width: 100%;
-  position: absolute;
 }
 
 
