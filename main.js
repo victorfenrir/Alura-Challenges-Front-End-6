@@ -16,3 +16,28 @@ acc[i].addEventListener("click", function() {
     }
 });
 } 
+
+var inputNome = document.querySelector("#nome");
+
+inputNome.addEventListener("keypress", function(e) {
+
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+  if (keyCode > 47 && keyCode < 58) {
+    e.preventDefault();
+  }
+
+});
+
+var inputCPF = document.querySelector("#cpf");
+
+inputCPF.addEventListener("keypress", function(e) {
+
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+  if (keyCode < 47 && keyCode > 58) {
+    e.preventDefault();
+  }
+
+});
+
