@@ -48,9 +48,10 @@
         <div>
             <label for="nascimento">Data de Nascimento:</label>
             <input type="date" id="nascimento" required disabled/>
+            <div id="nasc-error">"Pessoas de 12 anos ou menos não podem participar do evento."</div>
         </div>
         <div class="form-button">
-            <button type="submit">Avançar</button>
+            <button type="submit" onclick='return validadata()'>Avançar</button>
         </div>
     </form>
     <br>

@@ -80,7 +80,7 @@ input[type=checkbox]{
 
   .hamburger {
   display: block;
-  margin-left: 65%;
+  padding-left: 60%;
   }
 
   body {
@@ -283,12 +283,11 @@ input[type=checkbox]{
 /*Mapa de Setores*/
 
   .imagem-palco {
-    padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 150%;
-    margin-left: -15%;
+    width: 100%;
   }
+
   .h1-set {
     display: block;
     text-align: center;
@@ -300,7 +299,6 @@ input[type=checkbox]{
   }
 
   .imagem-pista {
-    padding: 10px;
     border: none;
     border-radius: 5px;
     width: 100%;
@@ -323,7 +321,6 @@ input[type=checkbox]{
   }
 
   .imagem-cadeiras {
-    padding: 10px;
     border: none;
     border-radius: 5px;
     width: 100%;
@@ -346,7 +343,6 @@ input[type=checkbox]{
   }
 
   .imagem-pista-premium {
-    padding: 10px;
     border: none;
     border-radius: 5px;
     width: 100%;
@@ -438,12 +434,20 @@ input[type=checkbox]{
     border-color: #000;
   }
 
-  #erro-cpf {
+  #cpf-error {
     display: none;
     color: red;
-    font-size: 12px;
-    margin-left: 10px;
+    font-size: 14px;
+    margin-left: 100%;
   }
+
+  #nasc-error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
   #nascimento[disabled] {
     background-color: #f2f2f2;
     color: #a1a1a1;
@@ -853,12 +857,20 @@ input[type=checkbox]{
     border: 2px solid black;
   }  
 
-  #erro-cpf {
+  #cpf-error {
     display: none;
     color: red;
-    font-size: 12px;
-    margin-left: 10px;
+    font-size: 14px;
+    margin-left: 0px;
   }
+  
+  #nasc-error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-left: 0px;
+  }
+  
   #nascimento[disabled] {
     background-color: #f2f2f2;
     color: #a1a1a1;
@@ -870,7 +882,7 @@ input[type=checkbox]{
     font-size: 16px;
     padding: 4px 16px;
   }
-
+  
 /*Ingresso Comprado*/
 
   .h1-comp {
