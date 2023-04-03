@@ -152,7 +152,117 @@ function validadata(){
     return true;
  }
   
-  // se for maior que 60 não vai acontecer nada!
   return false;
 }
+
+//Salvar dados do formulário em localStorage//
+
+// Obtenha o formulário e adicione um ouvinte de eventos para o evento submit
+const form = document.querySelector('#form');
+form.addEventListener('submit', function(event) {
+  // Impedir o comportamento padrão do envio do formulário
+  event.preventDefault();
+  
+  // Obtenha os valores dos campos do formulário
+  const nome = document.querySelector('#nome').value;
+  const email = document.querySelector('#email').value;
+  const cpf = document.querySelector('#cpf').value;
+  const nascimento = document.querySelector('#nascimento').value;
+  
+
+  // Armazene os valores do formulário no localStorage
+  localStorage.setItem("nome", nome);
+  localStorage.setItem('email', email);
+  localStorage.setItem('cpf', cpf);
+  localStorage.setItem('nascimento', nascimento);
+  
+  // Redirecione para a página desejada
+  window.location.assign("ingressos-comprados.html")
+});
+
+// Nome do banco de dados
+var DB_NAME = 'dados_form_db';
+
+// Versão do banco de dados
+var DB_VERSION = 1;
+
+// Nome da tabela
+var TABLE_NAME = 'dados_form';
+
+// Cria ou abre o banco de dados
+var request = indexedDB.open(DB_NAME, DB_VERSION);
+
+// Função chamada quando o banco de dados é criado ou atualizado
+request.onupgradeneeded = function(event) {
+  // Obtém o banco de dados
+  var db = event.target.result;
+
+  // Cria a tabela "dados_form" caso ela não exista
+  if (!db.objectStoreNames.contains(TABLE_NAME)) {
+    var objectStore = db.createObjectStore(TABLE_NAME, { keyPath: 'id', autoIncrement:true });
+    objectStore.createIndex('nome', 'nome', { unique: false });
+    objectStore.createIndex('email', 'email', { unique: true });
+    objectStore.createIndex('cpf', 'cpf', { unique: true });
+    objectStore.createIndex('datanasc', 'datanasc', { unique: false });
+  }
+};
+
+
+// Função para adicionar os dados do formulário no banco de dados
+function adicionarDadosForm(nome, email, cpf, datanasc) {
+  // Abre uma transação para acessar a tabela "dados_form"
+  var transaction = request.result.transaction(TABLE_NAME, 'readwrite');
+
+  // Obtém a tabela "dados_form"
+  var objectStore = transaction.objectStore(TABLE_NAME);
+
+  // Cria um objeto com os dados do formulário
+  var dados = {
+    nome: nome,
+    email: email,
+    cpf: cpf,
+    datanasc: datanasc
+  };
+
+  // Adiciona o objeto na tabela "dados_form"
+  var requestAdd = objectStore.add(dados);
+
+  // Trata o resultado da adição
+  requestAdd.onsuccess = function(event) {
+    console.log('Dados adicionados com sucesso!');
+  };
+
+  requestAdd.onerror = function(event) {
+    console.log('Erro ao adicionar os dados!');
+  };
+}
+
+// Função para buscar todos os dados da tabela "dados_form" e exibi-los no console
+function buscarDadosForm() {
+  // Abre uma transação para acessar a tabela "dados_form"
+  var transaction = request.result.transaction(TABLE_NAME, 'readonly');
+
+  // Obtém a tabela "dados_form"
+  var objectStore = transaction.objectStore(TABLE_NAME);
+
+  // Cria um cursor para percorrer todos os objetos da tabela
+  var requestCursor = objectStore.openCursor();
+
+  // Trata o resultado da busca
+  requestCursor.onsuccess = function(event) {
+    var cursor = event.target.result;
+
+    if (cursor) {
+      console.log(cursor.value);
+      cursor.continue();
+    } else {
+      console.log('Fim da busca.');
+    }
+  };
+
+  requestCursor.onerror = function(event) {
+    console.log('Erro ao buscar os dados!');
+  };
+}
+
 

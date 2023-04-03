@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,10 +32,25 @@
 
     <div>
         <h1 class="h1-comp">Uhul, agora sim! Seu ingresso está aqui, apresente<br>
-             na entrada do evento e divirta-se!</h1>
-        <div>
-            <img class="imagem-ingresso-comprado" src="ingresso-comprado/ingresso/ingresso-desktop.png" alt="Imagem do Ingresso Comprado">
+                na entrada do evento e divirta-se!</h1>
+        <p>
+        <p>
+        
+        <div class="info">
+            <p><strong>Nome:</strong> <span id="nome"></span></p>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+            alert(nome);
+
+                // Obtenha as informações do localStorage
+            var nome = localStorage.getItem("nome");
+        
+            // Preencha o ingresso com as informações do localStorage
+            document.querySelector("#nome").textContent = nome;
+            });            
+        </script>
     </div>
     
     <br>

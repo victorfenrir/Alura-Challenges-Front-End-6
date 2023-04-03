@@ -22,7 +22,6 @@ body {
 .logo {
   font-size: 32px;
   font: #fff;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -285,6 +284,7 @@ input[type=checkbox]{
   .imagem-palco {
     border: none;
     border-radius: 5px;
+    padding-bottom: 20px;
     width: 100%;
   }
 
@@ -467,13 +467,6 @@ input[type=checkbox]{
     font-size: 30px;
     color: #303030e8;
   }
-
-  .imagem-ingresso-comprado {
-    float: left;
-    padding: 20px;
-    width: 100%;
-  }
-
 }
 
 /* Media Querie - Desktop*/
@@ -515,7 +508,7 @@ input[type=checkbox]{
   
   .comprar-button {
     cursor: pointer;
-    border-radius: 5px;
+    border: none;
     margin-top: 15px;
     margin-left: 18%;
     background-color: rgb(234, 241, 243)
@@ -889,12 +882,6 @@ input[type=checkbox]{
     text-align: center;
     font-size: 30px;
     color: #303030e8;
-  }
-
-  .imagem-ingresso-comprado {
-    float: left;
-    padding: 20px;
-    margin-left: 24%;
   }
 }
 

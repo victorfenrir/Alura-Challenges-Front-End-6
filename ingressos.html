@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="reset.css">
     <title>Ingressos</title>
     <script src="main.js" defer></script>
+    <script>
+        function enviarForm() {
+          var nome = document.getElementById('nome').value;
+          var email = document.getElementById('email').value;
+          var cpf = document.getElementById('cpf').value;
+          var nascimento = document.getElementById('nascimento').value;
+          adicionarDadosForm(nome, email, cpf, nascimento);
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -31,7 +40,7 @@
     <br>
     <br>
 
-    <form id="form" action="file:///C:/Users/user/Desktop/Acad%C3%AAmico/Programa%C3%A7%C3%A3o/Challenge%20Front-End%206%20-%20Alura/ingressos-comprados.html" method="post">
+    <form id="form" action="ingressos-comprados.html" method="post">
         <div>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Digite seu nome" required minlength="2"/>
@@ -56,6 +65,9 @@
     </form>
     <br>
     <br>
+    <script>
+        buscarDadosForm();
+    </script>
 </body>
 
 <footer>
